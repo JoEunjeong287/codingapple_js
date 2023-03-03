@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">알림창임</p>
+        <button onclick="openInfo('none')">닫기</button>
+    </div>
+    
+    <button onclick="changeTitle('아이디 입력')">버튼1</button>
+    <button onclick="changeTitle('비밀번호 입력')">버튼2</button>
+    <script>
+        function changeTitle(a){
+            document.getElementById('title').innerHTML= a;
+            document.getElementById('alert').style.display='block';
+        }
+
+        function openInfo(a){
+            document.getElementById('alert').style.display=a;
+        }
+
+    </script>
+
+</body>
+</html>
