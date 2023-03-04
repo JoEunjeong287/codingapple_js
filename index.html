@@ -28,8 +28,10 @@
         <li class="list-group-item">And a fifth one</li>
     </ul>
     <script>
-        document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', function() {
-            document.getElementsByClassName('list-group')[0].classList.toggle('show'); //toggle: show가 있으면 제거, 없으면 추가하라는 뜻
+        document.querySelector('.navbar-toggler').addEventListener('click', function() { 
+            //querySelector 맨위 한개를 찾아줌, 클래스 표현할때 앞에 .찍음
+            document.querySelectorAll('.list-group')[0].classList.toggle('show'); //toggle: show가 있으면 제거, 없으면 추가하라는 뜻
+            //querySelectorAll는 다 찾아줌
         })
     </script>
       
