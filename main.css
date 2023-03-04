@@ -5,3 +5,11 @@
     border-radius: 5px;
     display: none;
 }
+
+.list-group{
+    display: none; /*숨김*/
+}
+
+.show{
+    display: block; /*css는 하단에 적을수록 우선 적용*/
+}
