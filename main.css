@@ -21,7 +21,9 @@
     background : rgba(0,0,0,0.5);
     z-index : 5;
     padding: 30px;
-    display: none;
+    visibility: hidden; /*애니메이션에서 display: none 대용*/
+    opacity: 0; /*투명도 0*/
+    transition: all 1s; /*1초에 서서히 변경*/
   }
   .white-bg {
     background: white;
@@ -29,5 +31,6 @@
     padding: 30px;
   } 
   .show-modal {
-    display: block;
+    visibility: visible; /*애니메이션에서 display: block 대용*/
+    opacity: 1;
   }
