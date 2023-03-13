@@ -39,3 +39,17 @@
     padding: 100px 20px;
     background: lightgray;
   }
+
+  .slide-container{
+    width: 300vw;
+    /* margin-left: -100vw; 왼쪽으로 옮기기
+    transform: translateX(-100vw); */
+    transition: all 1s; /*애니메이션*/
+  }
+  .slide-box{
+    width: 100vw;
+    float: left;
+  }
+  .slide-box img{
+    width: 100%;
+  }
